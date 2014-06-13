@@ -7,7 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface ViewController : UIViewController
+@interface CameraOverlayView : UIImageView
+
+@property UIImagePickerController *pickerController;
+
+@end
+
+
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+{
+    IBOutlet UIImageView *imageview;
+    IBOutlet UIImageView *imageview2;
+
+}
+
+-(IBAction)takePhoto;
+
+-(IBAction)openLibrary;
+
+-(IBAction)postTotwitter;
+
+-(IBAction)postToFacebook;
+
+-(IBAction)postToLINE;
 
 @end

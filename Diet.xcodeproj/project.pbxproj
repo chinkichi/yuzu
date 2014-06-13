@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8703033D191611B3006D4918 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8703033C191611B3006D4918 /* Social.framework */; };
+		8703033F191714B4006D4918 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8703033E191714B4006D4918 /* AVFoundation.framework */; };
+		8733B12B1917686D00C6BB75 /* waku.png in Resources */ = {isa = PBXBuildFile; fileRef = 8733B12A1917686D00C6BB75 /* waku.png */; };
+		8733B12D19177C8000C6BB75 /* scope.png in Resources */ = {isa = PBXBuildFile; fileRef = 8733B12C19177C8000C6BB75 /* scope.png */; };
+		8733B12F19187C9000C6BB75 /* Masu-.png in Resources */ = {isa = PBXBuildFile; fileRef = 8733B12E19187C9000C6BB75 /* Masu-.png */; };
 		87BA1CE81914AE9900B0814F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BA1CE71914AE9900B0814F /* Foundation.framework */; };
 		87BA1CEA1914AE9900B0814F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BA1CE91914AE9900B0814F /* CoreGraphics.framework */; };
 		87BA1CEC1914AE9900B0814F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BA1CEB1914AE9900B0814F /* UIKit.framework */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8703033C191611B3006D4918 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8703033E191714B4006D4918 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8733B12A1917686D00C6BB75 /* waku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waku.png; sourceTree = "<group>"; };
+		8733B12C19177C8000C6BB75 /* scope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scope.png; sourceTree = "<group>"; };
+		8733B12E19187C9000C6BB75 /* Masu-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Masu-.png"; sourceTree = "<group>"; };
 		87BA1CE41914AE9900B0814F /* Diet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BA1CE71914AE9900B0814F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87BA1CE91914AE9900B0814F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8703033F191714B4006D4918 /* AVFoundation.framework in Frameworks */,
+				8703033D191611B3006D4918 /* Social.framework in Frameworks */,
 				87BA1CEA1914AE9900B0814F /* CoreGraphics.framework in Frameworks */,
 				87BA1CEC1914AE9900B0814F /* UIKit.framework in Frameworks */,
 				87BA1CE81914AE9900B0814F /* Foundation.framework in Frameworks */,
@@ -101,6 +113,8 @@
 		87BA1CE61914AE9900B0814F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8703033E191714B4006D4918 /* AVFoundation.framework */,
+				8703033C191611B3006D4918 /* Social.framework */,
 				87BA1CE71914AE9900B0814F /* Foundation.framework */,
 				87BA1CE91914AE9900B0814F /* CoreGraphics.framework */,
 				87BA1CEB1914AE9900B0814F /* UIKit.framework */,
@@ -112,6 +126,9 @@
 		87BA1CED1914AE9900B0814F /* Diet */ = {
 			isa = PBXGroup;
 			children = (
+				8733B12E19187C9000C6BB75 /* Masu-.png */,
+				8733B12A1917686D00C6BB75 /* waku.png */,
+				8733B12C19177C8000C6BB75 /* scope.png */,
 				87BA1CF61914AE9900B0814F /* AppDelegate.h */,
 				87BA1CF71914AE9900B0814F /* AppDelegate.m */,
 				87BA1CF91914AE9900B0814F /* Main.storyboard */,
@@ -229,8 +246,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				87BA1D001914AE9900B0814F /* Images.xcassets in Resources */,
+				8733B12F19187C9000C6BB75 /* Masu-.png in Resources */,
 				87BA1CF21914AE9900B0814F /* InfoPlist.strings in Resources */,
+				8733B12D19177C8000C6BB75 /* scope.png in Resources */,
 				87BA1CFB1914AE9900B0814F /* Main.storyboard in Resources */,
+				8733B12B1917686D00C6BB75 /* waku.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +396,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daisuke Masuhara (7DDW2PTU3E)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Diet/Diet-Prefix.pch";
 				INFOPLIST_FILE = "Diet/Diet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,9 +411,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daisuke Masuhara (7DDW2PTU3E)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Diet/Diet-Prefix.pch";
 				INFOPLIST_FILE = "Diet/Diet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +480,7 @@
 				87BA1D181914AE9900B0814F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87BA1D191914AE9900B0814F /* Build configuration list for PBXNativeTarget "DietTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +489,7 @@
 				87BA1D1B1914AE9900B0814F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
