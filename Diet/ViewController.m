@@ -28,6 +28,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [imageview setContentMode:UIViewContentModeScaleAspectFit];
     //
+    //
     UIImageView* newImageView;
     newImageView = [[UIImageView alloc] init];
     newImageView.frame = self.view.bounds;
@@ -55,12 +56,30 @@
         
         picker.delegate = self;
         
-        UIImage *image = [UIImage imageNamed:@"waku.png"];
-        CameraOverlayView *overlayView = [[CameraOverlayView alloc] initWithImage:image];
-        overlayView.pickerController = picker;
+        UIImage *image = [UIImage imageNamed:@"waku2.png"];
         
-        overlayView.frame = CGRectMake(0, 45, 320, 590);//大きさと座標を決める
+//        // じゅんろー試し書き
+//        UIImage *image_after;
+//        
+//        CGFloat width = 320;
+//        CGFloat height = 435 - 64;
+//        
+//        UIGraphicsBeginImageContext(CGSizeMake(width, height));
+//        [image drawInRect:CGRectMake(0, 0, width, height)];
+//        image_after = UIGraphicsGetImageFromCurrentImageContext();
+//        
+//        UIGraphicsEndImageContext();
+//        // じゅんろーここまで
+        
+        //CameraOverlayView *overlayView = [[CameraOverlayView alloc] initWithImage:image];
+        CameraOverlayView *overlayView = [[CameraOverlayView alloc] initWithImage:image];
+       
+        overlayView.pickerController = picker;
+        //UIImageViewの生成
+        
+        overlayView.frame = CGRectMake(0, 64, 320, 435);//大きさと座標を決める
         overlayView.contentMode = UIViewContentModeScaleAspectFit;//AspectFill
+        overlayView.backgroundColor = [UIColor clearColor];
         //overlayView.autoresizingMask =
         //UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         overlayView.alpha = 1.0;
@@ -72,15 +91,16 @@
         //昨日の画像を上にのせる
         
         
-         UIImageView *yesterdaywakuImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 20, 70, 100)];
-        yesterdaywakuImageView.image = [UIImage imageNamed:@"waku.png"];
-        yesterdaywakuImageView.alpha = 1.0;
+//         UIImageView *yesterdaywakuImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 20, 70, 100)];
+//        yesterdaywakuImageView.image = [UIImage imageNamed:@"waku2.png"];
+//        yesterdaywakuImageView.alpha = 1.0;
         
-        UIImageView *yesterdayImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 20, 70, 100)];
-        yesterdayImageView.image = [UIImage imageNamed:@"Masu-.png"];
-        yesterdayImageView.alpha = 1.0;
+        //UIImageView *yesterdayImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 20, 70, 100)];
+        //yesterdayImageView.image = [UIImage imageNamed:@"Masu-.png"];
+        //yesterdayImageView.alpha = 1.0;
         
-        [overlayView addSubview:yesterdayImageView];
+        //[overlayView addSubview:yesterdayImageView];←まっすー
+
         
         [self presentViewController:picker animated:YES completion:nil];
         
@@ -99,11 +119,11 @@
         
         picker.delegate = self;
         
-        UIImage *image = [UIImage imageNamed:@"waku.png"];
+        UIImage *image = [UIImage imageNamed:@"waku2.png"];
         CameraOverlayView *overlayView = [[CameraOverlayView alloc] initWithImage:image];
         overlayView.pickerController = picker;
         
-        overlayView.frame = CGRectMake(0, 44, 320, 454);//大きさと座標を決める
+        overlayView.frame = CGRectMake(0, 44, 320, 454);//大きさと座標を決める。座標タテヨコ、物タテヨコ。
         overlayView.contentMode = UIViewContentModeScaleAspectFit;//AspectFill
         //overlayView.autoresizingMask =
         //UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -115,6 +135,7 @@
     }
    
 }
+
 
 
 -(void)imagePickerController:(UIImagePickerController *)picker
