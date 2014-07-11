@@ -27,8 +27,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [imageview setContentMode:UIViewContentModeScaleAspectFit];
-    //
-    //
+    
+    
     UIImageView* newImageView;
     newImageView = [[UIImageView alloc] init];
     newImageView.frame = self.view.bounds;
