@@ -36,6 +36,8 @@
     //newImageView.autoresizingMask =
     //UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:imageview];
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +58,7 @@
         
         picker.delegate = self;
         
-        UIImage *image = [UIImage imageNamed:@"waku2.png"];
+        UIImage *image = [UIImage imageNamed:@"waku3.png"];
         
 //        // じゅんろー試し書き
 //        UIImage *image_after;
@@ -119,7 +121,7 @@
         
         picker.delegate = self;
         
-        UIImage *image = [UIImage imageNamed:@"waku2.png"];
+        UIImage *image = [UIImage imageNamed:@"waku3.png"];
         CameraOverlayView *overlayView = [[CameraOverlayView alloc] initWithImage:image];
         overlayView.pickerController = picker;
         
@@ -148,6 +150,8 @@
         // カメラ
         imageview.alpha = 0.6;
         [imageview setImage:image];
+        
+        
         
         UIImageWriteToSavedPhotosAlbum(
                                        image,

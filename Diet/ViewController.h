@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Social/Social.h>
 #import <AVFoundation/AVFoundation.h>
+#import <CoreImage/CoreImage.h>
 
 @interface CameraOverlayView : UIImageView
 
@@ -33,5 +34,7 @@
 -(IBAction)postToFacebook;
 
 -(IBAction)postToLINE;
+
+
 
 @end
